@@ -60,3 +60,26 @@
     h1 { font-size: var(--fs-h1); }
     h2 { font-size: var(--fs-h2); }
     h3 { font-size: var(--fs-h3); }
+
+    .section-title {
+        margin-bottom: .25em;
+    }
+
+    .section-title-intro {
+        font-weight: var(--fw-reg);
+    }
+
+    .section-title-intro strong {
+        display: block;
+    }
+
+    .section-subtitle {
+        margin: 0;
+        font-size: var(--fs-h3);
+    }
+
+    .section-subtitle-intro,
+    .section-subtitle-about {
+        background: var(--clr-accent);
+        font-family: var(--ff-secondary);
+    }
