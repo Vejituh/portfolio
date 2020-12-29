@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Ubuntu:wght@400;700&display=swap');
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 :root {
     --ff-primary: 'Ubuntu', sans-serif;
     --ff-secondary: 'DM Mono', monospace;
-
-    --fw-reg:400;
-    --ff-bold:700;
-
+    --fw-reg: 400;
+    --ff-bold: 700;
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
-
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -31,55 +25,60 @@
         --fs-body: 1.125rem;
     }
 }
-    
-    /* general styles */
 
-    body {
-        background: var(--clr-light);
-        color: var(--clr-dark);
-        margin: o;
-        font-family: var(--ff-primary);
-        font-size: var(--fs-body);
-        line-height: 1.6;
-    }
+/* general styles */
 
-    img {
-        display: block;
-        max-width: 100%;
-    }
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: o;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
 
-    /* typography */
+img {
+    display: block;
+    max-width: 100%;
+}
 
-    h1,
-    h2,
-    h3 {
-        line-height: 1.1;
-        margin: 0;
-    }
+/* typography */
 
-    h1 { font-size: var(--fs-h1); }
-    h2 { font-size: var(--fs-h2); }
-    h3 { font-size: var(--fs-h3); }
+h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0;
+}
 
-    .section-title {
-        margin-bottom: .25em;
-    }
+h1 {
+    font-size: var(--fs-h1);
+}
 
-    .section-title-intro {
-        font-weight: var(--fw-reg);
-    }
+h2 {
+    font-size: var(--fs-h2);
+}
 
-    .section-title-intro strong {
-        display: block;
-    }
+h3 {
+    font-size: var(--fs-h3);
+}
 
-    .section-subtitle {
-        margin: 0;
-        font-size: var(--fs-h3);
-    }
+.section-title {
+    margin-bottom: .25em;
+}
 
-    .section-subtitle-intro,
-    .section-subtitle-about {
-        background: var(--clr-accent);
-        font-family: var(--ff-secondary);
-    }
+.section-title-intro {
+    font-weight: var(--fw-reg);
+}
+
+.section-title-intro strong {
+    display: block;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro, .section-subtitle-about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
