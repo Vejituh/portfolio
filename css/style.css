@@ -63,7 +63,7 @@ section {
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--ff-bold);
@@ -292,6 +292,7 @@ nav {
 }
 
 .services {
+    margin: 0 2em;
     margin-bottom: 4em;
 }
 
@@ -317,8 +318,12 @@ nav {
         margin-left: auto;
         margin-right: auto;
     }
-    .service+.service {
-        /* use flexbox gap */
+
+    .service {
+        width: 33%;
+    }
+
+    .service + .service {
         margin-left: 2em;
     }
 }
@@ -354,6 +359,7 @@ nav {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
+        text-transform: none;
     }
     .about-me-img {
         grid-area: img;
@@ -373,9 +379,10 @@ nav {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* max-width: 1000px;
-    margin: 0 auto; */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: .5em;
 }
 
 .portfolio-item {
@@ -384,6 +391,9 @@ nav {
 }
 
 .portfolio-img {
+    min-height: 100%;
+    object-fit: cover;
+    object-position: top left;
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 25ms linear;
 }
 
