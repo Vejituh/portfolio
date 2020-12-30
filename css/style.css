@@ -106,6 +106,7 @@ h3 {
 }
 
 .section-subtitle {
+    text-transform: uppercase;
     margin: 0;
     font-size: var(--fs-h3);
 }
@@ -132,7 +133,7 @@ header {
 }
 
 .logo {
-    max-width: 40px;
+    max-width: 3em;
 }
 
 nav {
@@ -171,7 +172,7 @@ nav {
 }
 
 .nav-toggle {
-    padding: 1em;
+    padding: 1.3em;
     background: transparent;
     border: 0;
     cursor: pointer;
