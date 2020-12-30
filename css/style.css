@@ -234,9 +234,17 @@ nav {
 
 .intro {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.intro-img {
+.figure-header {
+    position: relative;
+    max-height: 250px;
+    max-width: 250px;
+    place-self: center;
+    overflow: hidden;
     box-shadow: var(--bs);
 }
 
@@ -253,12 +261,14 @@ nav {
         grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    .intro-img {
+    .figure-header {
         grid-area: img;
         min-width: 250px;
         position: relative;
         z-index: 2;
+        max-height: 300px;
     }
+
     .section-subtitle-intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -424,4 +434,18 @@ footer a {
 
 .social-list-link {
     padding: 0 .5em;
+}
+
+/* Individul portfolio item */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
