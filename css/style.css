@@ -113,6 +113,12 @@ h3 {
     margin-bottom: 1em;
 }
 
+.section-subtitle-work {
+    color: var(--clr-accent);
+    font-weight: var(--ff-bold);
+    margin-bottom: 2em;
+}
+
 /* Intro section */
 
 .intro {
@@ -210,17 +216,12 @@ h3 {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
+        grid-template-areas: "title img" "subtitle img" "text img";
         grid-gap: 2em;
     }
-
     .section-title-about {
         grid-area: title;
     }
-
     .section-subtitle-about {
         grid-column: 1 / -1;
         grid-row: 2;
@@ -230,11 +231,44 @@ h3 {
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-
     .about-me-img {
         grid-area: img;
         position: relative;
         z-index: 2;
     }
+}
 
+/* Portfolio section */
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* max-width: 1000px;
+    margin: 0 auto; */
+}
+
+.portfolio-item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio-img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 25ms linear;
+}
+
+.portfolio-item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-img:hover,
+.portfolio-item:focus .portfolio-img {
+    transform: scale(1.2);
+    opacity: .5;
 }
