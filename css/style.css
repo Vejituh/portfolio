@@ -18,7 +18,7 @@
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -252,7 +252,7 @@ nav {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .intro {
         display: grid;
         width: min-content;
@@ -309,7 +309,7 @@ nav {
     opacity: 0.25;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -330,10 +330,12 @@ nav {
 }
 
 .about-me-img {
+    margin: 0 auto;
+    max-width: 250px;
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -356,6 +358,7 @@ nav {
         grid-area: img;
         position: relative;
         z-index: 2;
+        max-width: 100%;
     }
 }
 
